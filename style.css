@@ -28,6 +28,9 @@
 
   /* size */
   --size-border-radius: 4px;
+
+  /* Annimation */
+  --animation-duration: 300ms;
 }
 
 /* Universal tags */
@@ -49,6 +52,15 @@ a {
 ul {
   list-style: none;
   padding-left: 0;
+}
+li {
+  list-style: none;
+}
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Typography */
@@ -104,4 +116,98 @@ h3 {
 
 .navbar_menu_item:hover {
   background-color: var(--color-dark-pink);
+}
+
+/* Home */
+#home {
+  background: url("images/home-background.png") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home_avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+
+.home_title,
+.home_description {
+  color: var(--color-white);
+}
+
+.home_contact {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: 4px;
+}
+
+/* Section common */
+.section {
+  padding: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+.about_majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+.major_icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  margin: auto;
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+.major_icon i {
+  transition: all var(--animation-duration) ease;
+}
+.major_icon:hover i {
+  color: var(--color-pink);
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.major_title,
+.major_description {
+  color: var(--color-dark-grey);
+}
+
+.major_description {
+  font-size: var(--font-small);
+}
+
+.education {
+  display: flex;
+  align-items: center;
+}
+
+.education_description {
+  margin: 0 16px;
+  text-align: left;
+}
+
+.education_name,
+.education_period {
+  color: var(--color-light-grey);
+}
+
+.education_name {
+  font-size: var(--font-small);
+}
+
+.education_period {
+  font-size: var(--font-micro);
 }
