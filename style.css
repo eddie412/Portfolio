@@ -151,6 +151,10 @@ h3 {
 .section {
   padding: 50px;
   text-align: center;
+  margin: auto;
+}
+
+.section_container {
   max-width: 1200px;
   margin: auto;
 }
@@ -210,4 +214,34 @@ h3 {
 
 .education_period {
   font-size: var(--font-micro);
+}
+
+/* skill */
+#skills {
+  background-color: var(--color-yellow);
+}
+
+.skillset {
+  display: flex;
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+  margin: 20px 0;
+}
+.skillset_title {
+  color: var(--color-white);
+}
+.skillset_left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-grey);
+}
+.skill_description {
+  display: flex;
+  justify-content: space-between;
+}
+.skillset_right {
+  flex-basis: 40%;
+}
+
+.tools {
+  background-color: var(--color-grey);
 }
